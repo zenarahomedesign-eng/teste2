@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+  --background: 249 249 249;
+  /* #F9F9F9 */
+  --foreground: 51 51 51;
+  /* #333333 */
+  --card: 255 255 255;
+  /* #FFFFFF */
+  --card-foreground: 51 51 51;
+  --popover: 255 255 255;
+  --popover-foreground: 51 51 51;
+  --primary: 0 123 255;
+  /* #007BFF */
+  --primary-foreground: 255 255 255;
+  --secondary: 240 240 240;
+  /* #F0F0F0 */
+  --secondary-foreground: 51 51 51;
+  --muted: 240 240 240;
+  --muted-foreground: 108 117 125;
+  --accent: 230 230 230;
+  --accent-foreground: 51 51 51;
+  --destructive: 220 53 69;
+  --destructive-foreground: 255 255 255;
+  --border: 222 226 230;
+  --input: 222 226 230;
+  --ring: 0 123 255;
+  --admin-highlight: 0 64 128;
+  /* #004080 */
+  --super-admin-highlight: 40 167 69;
+  /* #28A745 */
+  --collaborator-highlight: 0 123 255;
+  /* #007BFF */
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 10 10 10;
+  --foreground: 249 249 249;
+  --card: 18 18 18;
+  --card-foreground: 249 249 249;
+  --popover: 18 18 18;
+  --popover-foreground: 249 249 249;
+  --primary: 0 123 255;
+  --primary-foreground: 255 255 255;
+  --secondary: 36 36 36;
+  --secondary-foreground: 249 249 249;
+  --muted: 36 36 36;
+  --muted-foreground: 160 160 160;
+  --accent: 54 54 54;
+  --accent-foreground: 249 249 249;
+  --destructive: 220 53 69;
+  --destructive-foreground: 255 255 255;
+  --border: 54 54 54;
+  --input: 54 54 54;
+  --ring: 0 123 255;
+  --admin-highlight: 100 181 246;
+  /* Lighter blue for dark mode */
+  --super-admin-highlight: 129 199 132;
+  /* Lighter green for dark mode */
+  --collaborator-highlight: 144 202 249;
+  /* Lighter blue for dark mode */
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.bg-admin-highlight {
+  background-color: hsl(var(--admin-highlight));
+}
+
+.text-admin-highlight {
+  color: hsl(var(--admin-highlight));
+}
+
+.border-admin-highlight {
+  border-color: hsl(var(--admin-highlight));
+}
+
+.ring-admin-highlight {
+  --ring: var(--admin-highlight);
+}
+
+.bg-super-admin-highlight {
+  background-color: hsl(var(--super-admin-highlight));
+}
+
+.text-super-admin-highlight {
+  color: hsl(var(--super-admin-highlight));
+}
+
+.border-super-admin-highlight {
+  border-color: hsl(var(--super-admin-highlight));
+}
+
+.ring-super-admin-highlight {
+  --ring: var(--super-admin-highlight);
+}
+
+.bg-collaborator-highlight {
+  background-color: hsl(var(--collaborator-highlight));
+}
+
+.text-collaborator-highlight {
+  color: hsl(var(--collaborator-highlight));
+}
+
+.border-collaborator-highlight {
+  border-color: hsl(var(--collaborator-highlight));
+}
+
+.ring-collaborator-highlight {
+  --ring: var(--collaborator-highlight);
+}
